@@ -39,14 +39,15 @@ while True:
                     break    # break the for loop after finding correct level.
             break    # break the while true loop - correct total
         elif total < 120 or total > 120:
-            print("Total incorrect.")
+            print("Total incorrect.\n")
 
     while True:
         # prompt user input until user input correct option(q/y).
         option = input(
-            "\nWould you like to enter another set of data? (q-exit/y-continue): ")
+            "\nWould you like to enter another set of data?\nEnter 'y' for yes or 'q' to quit and view results: ")
+        print()
         if option != "q" and option != "y":
-            print("Input must be 'q' or 'y'.")
+            print("Input must be 'q' or 'y'.\n")
         else:
             break
     if option == "q":

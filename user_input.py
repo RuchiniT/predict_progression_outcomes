@@ -17,10 +17,10 @@ def credit_input(print_text):
         try:
             credit = int(input(print_text))
         except ValueError:
-            print("Integer required.")
+            print("Integer required.\n")
         else:
             if not credit in credit_range:
-                print("Out of range.")
+                print("Out of range.\n")
             else:
                 break
     return credit
